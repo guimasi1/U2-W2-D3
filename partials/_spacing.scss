@@ -1,0 +1,45 @@
+$padding-map: (
+  sm: 0.3em 1em,
+  normal: 0.5em 1em,
+  md: 0.6em 1.2em,
+  lg: 0.8em 1.3em,
+  xl: 1em 1.4em,
+  xxl: 1em 1.6em,
+);
+
+$margin-map: (
+  sm: 0.5em 0.8em,
+  normal: 0.5em 1em,
+  md: 0.6em 1.4em,
+  lg: 0.7em 1.4em,
+  xl: 1em 1.6em,
+  xxl: 1em 2em,
+);
+
+@each $padding, $value in $padding-map {
+  .padding-inline-#{$padding} {
+    padding: $value;
+    display: inline-block;
+  }
+}
+
+@each $padding, $value in $padding-map {
+  .padding-block-#{$padding} {
+    padding: $value;
+    display: block;
+  }
+}
+
+@each $margin, $value in $margin-map {
+  .margin-inline-#{$margin} {
+    margin: $value;
+    display: inline-block;
+  }
+}
+
+@each $margin, $value in $margin-map {
+  .margin-block-#{$margin} {
+    margin: $value;
+    display: block;
+  }
+}

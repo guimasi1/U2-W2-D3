@@ -1,0 +1,16 @@
+@mixin title-big {
+  font-size: 3em;
+  color: rgb(205, 176, 16);
+  font-weight: bold;
+}
+
+// $my-sizes: 1em, 1.4em, 1.6em;
+
+// @each $individual-size in $my-sizes {
+//   .font-#{$individual-size} {
+//     font-size: $individual-size;
+//   }
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+$family: "Roboto", sans-serif;

@@ -1,0 +1,88 @@
+@import "partials/reset";
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/spacing";
+@import "partials/buttons";
+@import "partials/mixins";
+@import "partials/animations";
+
+body {
+  font-family: $family;
+}
+
+.nice-container {
+  background-color: rgb(234, 47, 47);
+  background-size: cover;
+  height: 45vh;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  .nav-container {
+    border-bottom: 1px solid black;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 1em auto;
+      ul {
+        display: flex;
+        gap: 1em;
+        li {
+          list-style-type: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+  width: 95%;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3em;
+    .h1 {
+      @include animationFade(800ms, ease-in, 0s);
+      width: 80%;
+      h1 {
+        @include title-big;
+        text-align: center;
+      }
+    }
+    .img {
+      text-align: center;
+      img {
+        @include animationFade(1000ms, ease-in, 100ms);
+
+        width: 25%;
+        @include floating;
+      }
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: flex-end;
+    button {
+      border: none;
+      border-radius: 3em;
+      padding: 0.5em 2em;
+    }
+    button:nth-of-type(1) {
+      @include animationFade(1100ms, ease-in, 0s);
+    }
+    button:nth-of-type(2) {
+      @include animationFade(1200ms, ease-in, 0s);
+    }
+    button:nth-of-type(3) {
+      @include animationFade(1300ms, ease-in, 0s);
+    }
+  }
+}

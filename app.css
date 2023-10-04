@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body,
+html {
+  margin: 0;
+}
+
+.padding-inline-sm {
+  padding: 0.3em 1em;
+  display: inline-block;
+}
+
+.padding-inline-normal {
+  padding: 0.5em 1em;
+  display: inline-block;
+}
+
+.padding-inline-md {
+  padding: 0.6em 1.2em;
+  display: inline-block;
+}
+
+.padding-inline-lg {
+  padding: 0.8em 1.3em;
+  display: inline-block;
+}
+
+.padding-inline-xl {
+  padding: 1em 1.4em;
+  display: inline-block;
+}
+
+.padding-inline-xxl {
+  padding: 1em 1.6em;
+  display: inline-block;
+}
+
+.padding-block-sm {
+  padding: 0.3em 1em;
+  display: block;
+}
+
+.padding-block-normal {
+  padding: 0.5em 1em;
+  display: block;
+}
+
+.padding-block-md {
+  padding: 0.6em 1.2em;
+  display: block;
+}
+
+.padding-block-lg {
+  padding: 0.8em 1.3em;
+  display: block;
+}
+
+.padding-block-xl {
+  padding: 1em 1.4em;
+  display: block;
+}
+
+.padding-block-xxl {
+  padding: 1em 1.6em;
+  display: block;
+}
+
+.margin-inline-sm {
+  margin: 0.5em 0.8em;
+  display: inline-block;
+}
+
+.margin-inline-normal {
+  margin: 0.5em 1em;
+  display: inline-block;
+}
+
+.margin-inline-md {
+  margin: 0.6em 1.4em;
+  display: inline-block;
+}
+
+.margin-inline-lg {
+  margin: 0.7em 1.4em;
+  display: inline-block;
+}
+
+.margin-inline-xl {
+  margin: 1em 1.6em;
+  display: inline-block;
+}
+
+.margin-inline-xxl {
+  margin: 1em 2em;
+  display: inline-block;
+}
+
+.margin-block-sm {
+  margin: 0.5em 0.8em;
+  display: block;
+}
+
+.margin-block-normal {
+  margin: 0.5em 1em;
+  display: block;
+}
+
+.margin-block-md {
+  margin: 0.6em 1.4em;
+  display: block;
+}
+
+.margin-block-lg {
+  margin: 0.7em 1.4em;
+  display: block;
+}
+
+.margin-block-xl {
+  margin: 1em 1.6em;
+  display: block;
+}
+
+.margin-block-xxl {
+  margin: 1em 2em;
+  display: block;
+}
+
+@keyframes myAnimation {
+  0%, 30% {
+    opacity: 0;
+    transform: translate(0px, -50px);
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.nice-container {
+  background-color: rgb(234, 47, 47);
+  background-size: cover;
+  height: 45vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .nav-container {
+  border-bottom: 1px solid black;
+}
+header .nav-container nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 1em auto;
+}
+header .nav-container nav ul {
+  display: flex;
+  gap: 1em;
+}
+header .nav-container nav ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+  width: 95%;
+}
+.hero-section .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+.hero-section .title .h1 {
+  animation: myAnimation 800ms ease-in 0s;
+  width: 80%;
+}
+.hero-section .title .h1 h1 {
+  font-size: 3em;
+  color: rgb(205, 176, 16);
+  font-weight: bold;
+  text-align: center;
+}
+.hero-section .title .img {
+  text-align: center;
+}
+.hero-section .title .img img {
+  animation: myAnimation 1000ms ease-in 100ms;
+  width: 25%;
+  border-radius: 1em;
+  box-shadow: 2px 2px 20px lightgrey;
+}
+.hero-section .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items: flex-end;
+}
+.hero-section .buttons button {
+  border: none;
+  border-radius: 3em;
+  padding: 0.5em 2em;
+}
+.hero-section .buttons button:nth-of-type(1) {
+  animation: myAnimation 1100ms ease-in 0s;
+}
+.hero-section .buttons button:nth-of-type(2) {
+  animation: myAnimation 1200ms ease-in 0s;
+}
+.hero-section .buttons button:nth-of-type(3) {
+  animation: myAnimation 1300ms ease-in 0s;
+}/*# sourceMappingURL=app.css.map */
