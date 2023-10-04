@@ -86,3 +86,11 @@ header {
     }
   }
 }
+
+.img-container {
+  @include grid(2);
+
+  img {
+    @include floating;
+  }
+}

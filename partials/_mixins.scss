@@ -3,6 +3,14 @@
   box-shadow: 2px 2px 20px lightgrey;
 }
 
-@mixin grid {
+@mixin grid($howManyImgPerRow) {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  div {
+    flex-basis: calc(100% / $howManyImgPerRow);
+    img {
+      width: 100%;
+    }
+  }
 }
