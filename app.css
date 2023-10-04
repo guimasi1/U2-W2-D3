@@ -4,6 +4,18 @@ html {
   margin: 0;
 }
 
+.btn-bkg-1 {
+  background-color: #0e6cff;
+}
+
+.btn-bkg-2 {
+  background-color: #ff8700;
+}
+
+.btn-bkg-3 {
+  background-color: #4caf50;
+}
+
 .padding-inline-sm {
   padding: 0.3em 1em;
   display: inline-block;
@@ -139,10 +151,11 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
+  color: #f4f4f4;
 }
 
 .nice-container {
-  background-color: rgb(234, 47, 47);
+  background-color: rgb(109, 224, 166);
   background-size: cover;
   height: 45vh;
 }
@@ -174,6 +187,7 @@ header .nav-container nav ul li {
   flex-direction: column;
   margin: 1em auto;
   width: 95%;
+  padding: 0.7em;
 }
 .hero-section .title {
   display: flex;

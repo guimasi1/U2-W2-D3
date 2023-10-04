@@ -8,10 +8,11 @@
 
 body {
   font-family: $family;
+  color: $testo;
 }
 
 .nice-container {
-  background-color: rgb(234, 47, 47);
+  background-color: rgb(109, 224, 166);
   background-size: cover;
   height: 45vh;
 }
@@ -42,6 +43,7 @@ header {
   flex-direction: column;
   margin: 1em auto;
   width: 95%;
+  padding: 0.7em;
   .title {
     display: flex;
     align-items: center;
