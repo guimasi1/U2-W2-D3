@@ -32,6 +32,10 @@ header {
         li {
           list-style-type: none;
           cursor: pointer;
+          &:hover {
+            color: lightcoral;
+            transform: scale(1.2);
+          }
         }
       }
     }
@@ -52,6 +56,7 @@ header {
     .h1 {
       @include animationFade(800ms, ease-in, 0s);
       width: 80%;
+
       h1 {
         @include title-big;
         text-align: center;
@@ -76,6 +81,10 @@ header {
       border: none;
       border-radius: 3em;
       padding: 0.5em 2em;
+      &:hover {
+        opacity: 0.8;
+      }
+
       cursor: pointer;
     }
     button:nth-of-type(1) {

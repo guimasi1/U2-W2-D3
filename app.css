@@ -181,6 +181,10 @@ header .nav-container nav ul li {
   list-style-type: none;
   cursor: pointer;
 }
+header .nav-container nav ul li:hover {
+  color: lightcoral;
+  transform: scale(1.2);
+}
 
 .hero-section {
   display: flex;
@@ -225,6 +229,9 @@ header .nav-container nav ul li {
   border-radius: 3em;
   padding: 0.5em 2em;
   cursor: pointer;
+}
+.hero-section .buttons button:hover {
+  opacity: 0.8;
 }
 .hero-section .buttons button:nth-of-type(1) {
   animation: myAnimation 1100ms ease-in 0s;
