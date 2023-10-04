@@ -14,7 +14,7 @@ body {
 .nice-container {
   background-color: rgb(109, 224, 166);
   background-size: cover;
-  height: 45vh;
+  height: 52vh;
 }
 header {
   display: flex;
@@ -91,7 +91,19 @@ header {
 }
 
 .img-container {
-  @include grid(2);
+  margin-top: 3em;
+  @media screen and (min-width: 400px) {
+    @include grid(1);
+  }
+  @media screen and (min-width: 768px) {
+    @include grid(2);
+  }
+  @media screen and (min-width: 1000px) {
+    @include grid(3);
+  }
+  @media screen and (min-width: 1200px) {
+    @include grid(4);
+  }
 
   img {
     @include floating;
